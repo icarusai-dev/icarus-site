@@ -1,38 +1,262 @@
 <!DOCTYPE html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>30 modèles de relances clients : guide PDF à 17 €</title>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>30 modèles de relances clients : guide PDF à 17 € | ICARUS AI</title>
+<meta name="description" content="30 modèles de relances pour devis, factures et clients, prêts à copier. Guide PDF à 17 €, livré par e-mail après paiement. Créé avec une IA (ICARUS AI).">
 <style>
-body{font-family:Arial,Helvetica,sans-serif;max-width:680px;margin:30px auto;padding:0 18px;color:#222;line-height:1.55}
-h1{color:#1d4e89}.prix{font-size:1.6em;font-weight:bold;color:#1d4e89}
-.btn{display:inline-block;background:#1d4e89;color:#fff;padding:12px 22px;border-radius:6px;text-decoration:none;font-weight:bold;margin-top:12px}
-.cache{display:none}.case{background:#f4f7fb;padding:12px;border-radius:6px;margin:18px 0}
-li{margin:4px 0}.petit{color:#666;font-size:90%}
-</style></head><body>
-<h1>30 modèles de relances clients</h1>
-<p>Pour artisans, commerces et indépendants : relancer un devis, une facture ou un client sans être maladroit.</p>
-<h3>Ce que contient le guide (PDF, 7 chapitres)</h3>
-<ul>
-<li>Devis restés sans réponse (3 modèles)</li>
-<li>Factures impayées, de la simple relance à la mise en demeure (4 modèles)</li>
-<li>Clients après un premier échange (3 modèles)</li>
-<li>Demande d'avis et suivi après prestation (3 modèles)</li>
-<li>Réactiver un client fidèle (3 modèles)</li>
-<li>Rendez-vous et réservations (3 modèles)</li>
-<li>Relances commerciales à froid (3 modèles) + bonnes pratiques</li>
-</ul>
-<p>Modèles modifiables (Word ou texte) : remplacez les [crochets] et envoyez en deux minutes.</p>
-<p class="prix">17 € <span class="petit">TTC, paiement unique</span></p>
+  :root {
+    --principale: #1e3a8a;
+    --accent: #f59e0b;
+    --fond: #ffffff;
+    --fond-doux: #f1f5f9;
+    --texte: #0f172a;
+    --texte-doux: #475569;
+    --bord: #e2e8f0;
+    --rayon: 14px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--fond); color: var(--texte);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: var(--principale); }
+  .conteneur { width: min(1080px, 100% - 40px); margin-inline: auto; }
+  section { padding: 64px 0; }
+  section.doux { background: var(--fond-doux); }
+  h1, h2, h3 { line-height: 1.2; margin: 0 0 16px; letter-spacing: -0.01em; }
+  h1 { font-size: clamp(30px, 5vw, 48px); }
+  h2 { font-size: clamp(24px, 3.5vw, 34px); text-align: center; margin-bottom: 36px; }
+  h3 { font-size: 19px; }
+  p { margin: 0 0 14px; }
+  .doux-texte { color: var(--texte-doux); }
 
-<div class="case">
-<label><input type="checkbox" id="accord"> Je demande l'accès immédiat au contenu et je renonce à mon droit de rétractation.</label>
+  .barre { border-bottom: 1px solid var(--bord); background: var(--fond); position: sticky; top: 0; z-index: 10; }
+  .barre .conteneur { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .marque { font-weight: 800; color: var(--principale); text-decoration: none; font-size: 18px; }
+
+  .bouton {
+    display: inline-block; background: var(--principale); color: #fff; text-decoration: none; font-weight: 700;
+    padding: 15px 28px; border-radius: 999px; border: 0; cursor: pointer; font-size: 17px;
+    box-shadow: 0 8px 20px -8px var(--principale); transition: transform .15s, box-shadow .15s;
+  }
+  .bouton:hover { transform: translateY(-2px); box-shadow: 0 12px 24px -10px var(--principale); }
+  .bouton.petit { padding: 9px 18px; font-size: 15px; box-shadow: none; }
+
+  .accroche { padding: 56px 0 64px; background: linear-gradient(180deg, var(--fond-doux), var(--fond)); }
+  .accroche .grille { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; }
+  .etiquette {
+    display: inline-block; background: #fff; border: 1px solid var(--bord); color: var(--principale);
+    font-weight: 700; font-size: 14px; padding: 6px 12px; border-radius: 999px; margin-bottom: 18px;
+  }
+  .sous-titre { font-size: 19px; color: var(--texte-doux); margin-bottom: 26px; }
+  .rassurance { margin-top: 16px; font-size: 15px; color: var(--texte-doux); }
+  .apercu {
+    border-radius: var(--rayon); box-shadow: 0 30px 60px -25px rgba(15, 23, 42, .45);
+    transform: rotate(-2deg); background: #fff;
+  }
+
+  .cartes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .carte { background: #fff; border: 1px solid var(--bord); border-radius: var(--rayon); padding: 26px; }
+  .pastille {
+    width: 40px; height: 40px; border-radius: 12px; background: var(--principale); color: #fff;
+    display: grid; place-items: center; font-weight: 800; margin-bottom: 14px;
+  }
+
+  .liste { list-style: none; padding: 0; margin: 0 auto; max-width: 720px; }
+  .liste li {
+    padding: 14px 0 14px 40px; border-bottom: 1px solid var(--bord); position: relative;
+  }
+  .liste li::before {
+    content: ""; position: absolute; left: 6px; top: 20px; width: 16px; height: 9px;
+    border-left: 3px solid var(--accent); border-bottom: 3px solid var(--accent); transform: rotate(-45deg);
+  }
+  .liste li span { color: var(--texte-doux); }
+
+  .extrait {
+    max-width: 720px; margin: 0 auto; background: #fff; border: 1px solid var(--bord);
+    border-radius: var(--rayon); overflow: hidden; box-shadow: 0 20px 40px -30px rgba(15, 23, 42, .4);
+  }
+  .extrait .entete { background: var(--fond-doux); padding: 12px 20px; font-size: 14px; color: var(--texte-doux); }
+  .extrait .corps { padding: 22px 24px; white-space: pre-line; }
+
+  .deux { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 900px; margin: 0 auto; }
+  .deux ul { margin: 0; padding-left: 20px; }
+  .deux li { margin-bottom: 8px; }
+
+  .faq { max-width: 760px; margin: 0 auto; }
+  .faq details { border-bottom: 1px solid var(--bord); padding: 16px 0; }
+  .faq summary { cursor: pointer; font-weight: 700; list-style: none; position: relative; padding-right: 30px; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; position: absolute; right: 4px; top: -2px; font-size: 24px; color: var(--principale); }
+  .faq details[open] summary::after { content: "–"; }
+  .faq details p { margin: 12px 0 0; color: var(--texte-doux); }
+
+  .offre {
+    max-width: 520px; margin: 0 auto; background: #fff; border: 2px solid var(--principale);
+    border-radius: 20px; padding: 34px; text-align: center; box-shadow: 0 30px 60px -35px var(--principale);
+  }
+  .prix { font-size: 52px; font-weight: 800; color: var(--principale); line-height: 1; margin: 8px 0 4px; }
+  .prix small { font-size: 18px; color: var(--texte-doux); font-weight: 600; }
+  .offre .liste { text-align: left; margin: 22px 0; }
+  .retractation {
+    display: flex; gap: 12px; align-items: flex-start; text-align: left; background: var(--fond-doux);
+    border-radius: 12px; padding: 14px 16px; font-size: 15px; margin-bottom: 18px; cursor: pointer;
+  }
+  .retractation input { width: 20px; height: 20px; margin-top: 2px; flex: none; accent-color: var(--principale); }
+  .aide-paiement { font-size: 14px; color: var(--texte-doux); margin-top: 12px; }
+
+  footer { padding: 36px 0 90px; font-size: 14px; color: var(--texte-doux); text-align: center; border-top: 1px solid var(--bord); }
+
+  .barre-mobile { display: none; }
+
+  @media (max-width: 760px) {
+    section { padding: 48px 0; }
+    .accroche { padding: 36px 0 48px; }
+    .accroche .grille, .cartes, .deux { grid-template-columns: 1fr; }
+    .accroche .grille { gap: 32px; }
+    .apercu { transform: none; max-width: 320px; margin: 0 auto; }
+    .barre .bouton { display: none; }
+    .offre { padding: 26px 20px; }
+    .barre-mobile {
+      display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; align-items: center;
+      justify-content: space-between; gap: 12px; padding: 12px 20px; background: #fff;
+      border-top: 1px solid var(--bord); box-shadow: 0 -8px 20px -12px rgba(15, 23, 42, .3);
+    }
+    .barre-mobile strong { font-size: 20px; color: var(--principale); }
+  }
+</style>
+</head>
+<body>
+
+<header class="barre">
+  <div class="conteneur">
+    <a class="marque" href="#">ICARUS AI · Guides pratiques</a>
+    <a class="bouton petit" href="#offre">Acheter : 17 €</a>
+  </div>
+</header>
+
+<section class="accroche">
+  <div class="conteneur grille">
+    <div>
+      <span class="etiquette">Pour les artisans, commerçants et indépendants</span>
+      <h1>Relancez devis et factures sans être maladroit</h1>
+      <p class="sous-titre">30 modèles de relances prêts à copier, pour vos devis restés sans réponse, vos factures en attente et vos clients silencieux. Un guide PDF de 7 chapitres, à 17 € en paiement unique.</p>
+      <a class="bouton" href="#offre">Recevoir le guide : 17 €</a>
+      <p class="rassurance">PDF · livré par e-mail juste après le paiement, à l'adresse utilisée sur PayPal</p>
+    </div>
+    <img class="apercu" src="apercu.png" alt="Couverture du guide « 30 modèles de relances clients », fond bleu, titre en blanc">
+  </div>
+</section>
+
+<section>
+  <div class="conteneur">
+    <h2>Ce que ça change pour vous</h2>
+    <div class="cartes">
+      <div class="carte"><div class="pastille">1</div><h3>Relancer sans gêner</h3><p class="doux-texte">Des messages courts de 5 à 8 lignes, une seule demande par message. Votre client sait quoi faire.</p></div>
+      <div class="carte"><div class="pastille">2</div><h3>Être payé plus vite</h3><p class="doux-texte">De la simple relance à la mise en demeure, avec un ordre de relance clair pour vos factures.</p></div>
+      <div class="carte"><div class="pastille">3</div><h3>Gagner du temps</h3><p class="doux-texte">Vous copiez le modèle, remplacez les [crochets] par vos informations, et vous envoyez.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="doux">
+  <div class="conteneur">
+    <h2>Ce que contient le guide</h2>
+    <ul class="liste">
+      <li><strong>Devis sans réponse</strong> <span>· 3 modèles</span></li>
+      <li><strong>Factures impayées</strong> <span>· 4 modèles, de la simple relance à la mise en demeure</span></li>
+      <li><strong>Clients après un premier échange</strong> <span>· 3 modèles</span></li>
+      <li><strong>Demande d'avis et suivi après prestation</strong> <span>· 3 modèles</span></li>
+      <li><strong>Réactiver un client fidèle</strong> <span>· 3 modèles</span></li>
+      <li><strong>Rendez-vous et réservations</strong> <span>· 3 modèles</span></li>
+      <li><strong>Relances commerciales à froid</strong> <span>· 3 modèles, plus les bonnes pratiques</span></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="conteneur">
+    <h2>Un exemple tiré du guide</h2>
+    <div class="extrait">
+      <div class="entete">Chapitre 1, devis sans réponse : modèle 1</div>
+      <div class="corps"><b>Objet : Votre devis n°[numéro]</b>
+
+Bonjour [Prénom], je me permets de revenir vers vous au sujet du devis envoyé le [date]. Avez-vous eu le temps de le regarder ? Je reste disponible pour l'ajuster si besoin. Bonne journée, [Nom].</div>
+    </div>
+  </div>
+</section>
+
+<section class="doux">
+  <div class="conteneur">
+    <h2>Est-ce fait pour vous ?</h2>
+    <div class="deux">
+      <div class="carte"><h3>Pour vous si…</h3><ul><li>vous envoyez des devis et attendez parfois une réponse</li><li>vous avez des factures en attente de paiement</li><li>vous voulez relancer sans paraître insistant</li></ul></div>
+      <div class="carte"><h3>Pas pour vous si…</h3><ul><li>vous cherchez un conseil juridique personnalisé (le guide ne le remplace pas)</li><li>vous cherchez un logiciel de facturation automatisé</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="offre">
+  <div class="conteneur">
+    <div class="offre">
+      <h2 style="margin-bottom:8px">30 modèles de relances clients</h2>
+      <div class="prix">17 €<small> TTC</small></div>
+      <p class="doux-texte">Paiement unique, pas d'abonnement</p>
+      <ul class="liste">
+        <li>Guide PDF de 7 chapitres, 30 modèles de relances</li>
+        <li>Modèles copiables en texte, à adapter à vos clients</li>
+        <li>Bonnes pratiques et calendrier de relance (J+3, J+10, J+21)</li>
+      </ul>
+      <label class="retractation">
+        <input type="checkbox" id="accord">
+        <span>Je demande l'accès immédiat au contenu et je renonce à mon droit de rétractation.</span>
+      </label>
+      <a class="bouton" id="payer" href="https://www.paypal.com/ncp/payment/PLB-QYFVLZM7A6JK" style="display:none">Payer 17 € par carte ou PayPal</a>
+      <p class="aide-paiement" id="consigne">Cochez la case ci-dessus pour accéder au paiement.</p>
+      <p class="aide-paiement">Le guide arrive par e-mail, à l'adresse utilisée pour le paiement.</p>
+    </div>
+  </div>
+</section>
+
+<section class="doux">
+  <div class="conteneur">
+    <h2>Questions fréquentes</h2>
+    <div class="faq">
+      <details><summary>Sous quel format est le guide ?</summary><p>Un fichier PDF de 7 chapitres, avec les modèles en texte que vous pouvez copier-coller dans votre messagerie ou votre traitement de texte.</p></details>
+      <details><summary>Quand vais-je le recevoir ?</summary><p>Automatiquement par e-mail, juste après le paiement, à l'adresse utilisée sur PayPal.</p></details>
+      <details><summary>Puis-je adapter les modèles ?</summary><p>Oui. Remplacez les [crochets] par vos informations (noms, dates, montants). Le guide rappelle de vérifier vos mentions légales avant chaque relance.</p></details>
+      <details><summary>Qui a créé ce guide ?</summary><p>Il a été rédigé avec l'aide d'une intelligence artificielle : ICARUS AI, qui agit pour le compte de Icarus. Ce n'est pas un avocat, et le guide ne remplace pas un conseil juridique.</p></details>
+      <details><summary>Puis-je demander un remboursement ?</summary><p>Le guide est un contenu numérique livré immédiatement. En cochant la case, vous demandez cet accès tout de suite et renoncez à votre droit de rétractation.</p></details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="conteneur">
+    <p>ICARUS AI · Contact : icarus.aipro@gmail.com</p>
+  </div>
+</footer>
+
+<div class="barre-mobile">
+  <strong>17 €</strong>
+  <a class="bouton petit" href="#offre">Acheter</a>
 </div>
-<div id="zone"><span class="petit">Cochez la case pour accéder au paiement.</span></div>
-<div class="cache" id="paiement"><a class="btn" href="https://www.paypal.com/ncp/payment/PLB-QYFVLZM7A6JK">Acheter le guide : 17 €</a></div>
 
-<p class="petit">Document rédigé avec l'aide d'une intelligence artificielle (ICARUS AI, agissant pour le compte de Icarus). Le guide est livré par e-mail après paiement, à l'adresse utilisée sur PayPal. Contact : icarus.aipro@gmail.com</p>
 <script>
-document.getElementById('accord').addEventListener('change',function(){
- document.getElementById('paiement').className=this.checked?'':'cache';
- document.getElementById('zone').style.display=this.checked?'none':'';
-});
+  (function () {
+    var accord = document.getElementById("accord");
+    var payer = document.getElementById("payer");
+    var consigne = document.getElementById("consigne");
+    accord.addEventListener("change", function () {
+      payer.style.display = accord.checked ? "inline-block" : "none";
+      consigne.style.display = accord.checked ? "none" : "block";
+    });
+  })();
 </script>
-<p style="font:12px sans-serif;color:#777;text-align:center;margin:24px 0">Page réalisée par ICARUS AI, une intelligence artificielle.</p><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "4a8ec672978b4fb5be478a556c74576e"}'></script></body></html>
+<p style="font:12px sans-serif;color:#777;text-align:center;margin:24px 0">Page réalisée par ICARUS AI, une intelligence artificielle.</p><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "4a8ec672978b4fb5be478a556c74576e"}'></script></body>
+</html>
