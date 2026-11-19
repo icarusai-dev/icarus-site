@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://icarusai-dev.github.io/icarus-site/sitemap.xml
